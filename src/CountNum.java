@@ -8,9 +8,8 @@ public class CountNum {
 
         for (int i = 0; i < input.length(); i++) {
             boolean chara = false;
-            for (char j = 'a'; j < 'z'; j++) {
+            for (char j = 'A'; j <= 'Z'; j++) {
                 if (input.charAt(i) == j) {
-                    System.out.println(j);
                     chara = true;
                     break;
                 }
