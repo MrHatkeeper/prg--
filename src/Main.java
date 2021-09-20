@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +11,10 @@ public class Main {
         //System.out.println(Arrays.toString(sh.highSmall(sc)));
 
         CountNum cn = new CountNum();
-        System.out.println(cn.countNum(sc));
+        //System.out.println(cn.countNum(sc));
+
+        Aoe aoe = new Aoe();
+        System.out.println(aoe.adventOfCodePartOne(sc));
+        System.out.println(aoe.adventOfCodePartTwo(sc));
     }
 }
