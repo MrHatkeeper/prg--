@@ -1,3 +1,5 @@
+package Den1;
+
 import java.util.Scanner;
 
 public class Aoe {
