@@ -40,11 +40,11 @@ public class Main {
 
 
 
-        String lines[] = input.split("\n");
+        String[] lines = input.split("\n");
 
 
-        for(int i = 0; i < lines.length;i++){
-            String data[] = lines[i].split("\\|");
+        for (String line : lines) {
+            String[] data = line.split("\\|");
 
             double output = 1.0 / Float.parseFloat(data[4]);
             System.out.println(output + " " + data[3] + " = 1 CZK");
