@@ -1,18 +1,24 @@
 package Bankomat;
 
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader  br = new BufferedReader(new FileReader("src/Bankomat/input.txt"));
+    public static void main(String[] args){
+        int input = 5443;
 
-        System.out.println(br.readLine());
+        int[] bankovky = {5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2,1};
+        int out = 0;
 
 
-
+        for (int j : bankovky) {
+            boolean possible = true;
+            while (possible) {
+                if (input / j >= 1) {
+                    out += 1;
+                    input -= j;
+                } else {
+                    possible = false;
+                }
+            }
+        }
+        System.out.println(out);
     }
 }
