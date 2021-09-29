@@ -24,8 +24,6 @@ public class Main {
             int[] values = {l,w,h};
 
             out += 2*(l+w+h) + lowestNumber(values);
-            int testout = l+w+h + lowestNumber(values);
-            System.out.println(l + " + " + w + " + " + h + " + "  + lowestNumber(values) + " = " + testout );
         }
         System.out.println(out);
     }
