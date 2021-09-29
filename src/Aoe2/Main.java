@@ -18,12 +18,12 @@ public class Main {
         for (String s : input) {
             String[] prismVals = s.split("x");
 
-            int l = 2 * (Integer.parseInt(prismVals[0]) * Integer.parseInt(prismVals[1]));
-            int w = 2 * (Integer.parseInt(prismVals[1]) * Integer.parseInt(prismVals[2]));
-            int h = 2 * (Integer.parseInt(prismVals[0]) * Integer.parseInt(prismVals[2]));
+            int l = Integer.parseInt(prismVals[0]) * Integer.parseInt(prismVals[1]);
+            int w = Integer.parseInt(prismVals[1]) * Integer.parseInt(prismVals[2]);
+            int h = Integer.parseInt(prismVals[0]) * Integer.parseInt(prismVals[2]);
             int[] values = {l,w,h};
 
-            out += l+w+h + lowestNumber(values);
+            out += 2*(l+w+h) + lowestNumber(values);
             int testout = l+w+h + lowestNumber(values);
             System.out.println(l + " + " + w + " + " + h + " + "  + lowestNumber(values) + " = " + testout );
         }
