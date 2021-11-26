@@ -27,7 +27,7 @@ public class Main {
                     System.out.println(filter(input, i -> i % 11 == 0));
                     break;
                 case "Power":
-                    System.out.println(filter(input, i -> Integer.toString(i * i * i).charAt(Integer.toString(i * i * i).length() - 1) == '3'));
+                    System.out.println(filter(input, i -> Integer.toString(i * i * i).endsWith("3")));
                     break;
                 case "Multiply":
                     System.out.println(apply(input, i -> i * 2));
